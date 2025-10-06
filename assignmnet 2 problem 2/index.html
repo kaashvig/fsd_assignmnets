@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation & jQuery Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="mainTitle">Welcome to Dynamic Web Page</h1>
+
+        <div class="section">
+            <h3>1️ Change Text and Style</h3>
+            <p id="para1" class="info">This is a sample paragraph to be changed dynamically.</p>
+            <button onclick="changeText()">Change Text</button>
+            <button onclick="changeStyle()">Change Style</button>
+        </div>
+
+        <div class="section">
+            <h3>2️ Change Image Source</h3>
+            <img id="myImage" src="https://via.placeholder.com/150" width="150" alt="Sample Image">
+            <br><br>
+            <button onclick="changeImage()">Change Image</button>
+        </div>
+
+        <div class="section">
+            <h3>3️ Add and Delete Node</h3>
+            <ul id="listContainer">
+                <li class="listItem">Item 1</li>
+                <li class="listItem">Item 2</li>
+            </ul>
+            <button onclick="addNode()">Add Item</button>
+            <button onclick="deleteNode()">Delete Last Item</button>
+        </div>
+
+        <div class="section">
+            <h3>4️ jQuery Operations</h3>
+            <button id="jqButton">Change My Text (jQuery)</button>
+            <br><br>
+            <button id="bgButton">Set Background Image (jQuery)</button>
+        </div>
+
+        <div class="section">
+            <h3>5️ Access Form Data (jQuery)</h3>
+            <form id="userForm">
+                <input type="text" id="name" placeholder="Enter your name">
+                <input type="email" id="email" placeholder="Enter your email">
+                <button type="button" id="formBtn">Show Data</button>
+            </form>
+            <p id="formOutput"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

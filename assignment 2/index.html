@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-card">
+            <h2>Student Registration</h2>
+            <form id="registrationForm" onsubmit="return validateForm()">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username">
+                    <span class="error-msg" id="usernameError"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter your email">
+                    <span class="error-msg" id="emailError"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" placeholder="10-digit phone number">
+                    <span class="error-msg" id="phoneError"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password">
+                    <span class="error-msg" id="passwordError"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" placeholder="Confirm password">
+                    <span class="error-msg" id="confirmPasswordError"></span>
+                </div>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

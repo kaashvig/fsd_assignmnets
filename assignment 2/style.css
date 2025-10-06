@@ -1,0 +1,91 @@
+/* Background & Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Center Card */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-card {
+    background: #fff;
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 40px rgba(0,0,0,0.3);
+    width: 400px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+    outline: none;
+}
+
+/* Error Messages */
+.error-msg {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 700;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
